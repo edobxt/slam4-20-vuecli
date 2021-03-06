@@ -7,6 +7,8 @@
         <v-main>
             <div class="text-center pa-10">👋🏾 Bonjour 👋🏾</div>
             <!-- Mon code -->
+            <!-- Ajout du bouton -->
+            <v-btn block v-on:click="alertOnClick">Clique ici</v-btn>
         </v-main>
     </v-app>
 </template>
@@ -16,6 +18,11 @@ export default {
     name: "App",
     data() {
         return { school: "MyDigitalSchool" };
+    },
+    methods: {
+        alertOnClick: function() {
+            alert("Vous venez de cliquer !");
+        },
     },
 };
 </script>
