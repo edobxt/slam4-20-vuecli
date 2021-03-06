@@ -15,6 +15,12 @@
                 <v-card-text>Ceci est une card</v-card-text>
             </v-card>
             <br />
+            <!-- Ajout de la liste -->
+            <v-list-item>
+                <v-list-item-content v-for="(item, i) in items" :key="i">
+                    <v-list-item-title> {{ item.text }} </v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
         </v-main>
     </v-app>
 </template>
@@ -23,7 +29,14 @@
 export default {
     name: "App",
     data() {
-        return { school: "MyDigitalSchool" };
+        return {
+            school: "MyDigitalSchool",
+            items: [
+                { text: "Premier élément" },
+                { text: "Deuxième élément" },
+                { text: "Troisième élément" },
+            ],
+        };
     },
     methods: {
         alertOnClick: function() {
