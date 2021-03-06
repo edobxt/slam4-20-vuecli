@@ -30,7 +30,9 @@ export default {
     name: "App",
     data() {
         return {
+            // Titre de la barre
             school: "MyDigitalSchool",
+            // Élément de la liste
             items: [
                 { text: "Premier élément" },
                 { text: "Deuxième élément" },
@@ -39,6 +41,7 @@ export default {
         };
     },
     methods: {
+        // Méthode du bouton
         alertOnClick: function() {
             alert("Vous venez de cliquer !");
         },
