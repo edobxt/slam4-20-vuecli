@@ -9,6 +9,12 @@
             <!-- Mon code -->
             <!-- Ajout du bouton -->
             <v-btn block v-on:click="alertOnClick">Clique ici</v-btn>
+            <br />
+            <!-- Ajout de la card -->
+            <v-card color="#385F73" dark>
+                <v-card-text>Ceci est une card</v-card-text>
+            </v-card>
+            <br />
         </v-main>
     </v-app>
 </template>
